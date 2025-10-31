@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Majestic Pearl | Beach Luxury Resort</title>
+
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-gem me-2"></i> Majestic Pearl</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-book ms-3 scroll-book" href="#booking">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline poster="../assets/hero-home.jpg">
+      <source src="../assets/home-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container text-center fade-in">
+      <h1 class="reveal">Escape to Coastal Elegance</h1>
+      <p class="reveal">Timeless luxury on golden sands — a seaside sanctuary crafted for serene escapes.</p>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-gold scroll-book" href="#booking">Book Your Stay</a>
+        <a class="btn btn-outline" href="rooms.html">Explore Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="booking-card reveal">
+        <form id="bookingForm" class="row g-3 align-items-end">
+          <div class="col-md-3">
+            <label for="checkin">Check-in</label>
+            <input id="checkin" type="date" class="form-control" required>
+          </div>
+          <div class="col-md-3">
+            <label for="checkout">Check-out</label>
+            <input id="checkout" type="date" class="form-control" required>
+          </div>
+          <div class="col-md-3">
+            <label for="guests">Guests</label>
+            <input id="guests" type="number" min="1" value="1" class="form-control" required>
+          </div>
+          <div class="col-md-3 d-grid">
+            <button type="submit" class="btn btn-gold btn-booking">Check Availability</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-preview" id="about">
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <h2>About Us</h2>
+        <h3>Our Resort Story</h3>
+        <p>Nestled along a tranquil shoreline, Majestic Pearl is crafted to celebrate calm mornings and golden sunsets.
+          We blend refined interiors, warm hospitality and seaside rituals to create a retreat where each stay feels
+          both serene and indulgent.</p>
+        <a class="btn btn-outline mt-3" href="about.html">Read the Full Story</a>
+      </div>
+      <div class="about-highlight reveal">
+        <div class="highlight-card">
+          <h4>Curated Experiences</h4>
+          <p>Private dining, sunset cruises, and spa rituals crafted from coastal traditions.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Local Flavors</h4>
+          <p>Chef-driven menus celebrating fresh, island-sourced ingredients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms" class="featured-rooms">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Rooms</h2>
+
+      <div class="rooms-grid" role="list">
+        <article class="room-card reveal" role="listitem">
+          <img src="../assets/ocean-view.jpg" alt="Ocean View Suite">
+          <div class="room-body">
+            <h3>Ocean View Suite</h3>
+            <p class="room-excerpt">Balcony, king bed, sweeping ocean views.</p>
+            <div class="room-footer">
+              <span class="room-price">$299 / night</span>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline">Details</a>
+                <a href="contact.html" class="btn btn-gold">Book</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card reveal" role="listitem">
+          <img src="../assets/garden-villa.webp" alt="Beachfront Villa">
+          <div class="room-body">
+            <h3>Beachfront Villa</h3>
+            <p class="room-excerpt">Private pool & direct sand access.</p>
+            <div class="room-footer">
+              <span class="room-price">$499 / night</span>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline">Details</a>
+                <a href="contact.html" class="btn btn-gold">Book</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card reveal" role="listitem">
+          <img src="../assets/presidential-suite.avif" alt="Presidential Suite">
+          <div class="room-body">
+            <h3>Presidential Suite</h3>
+            <p class="room-excerpt">Ultimate comfort & sea view experience.</p>
+            <div class="room-footer">
+              <span class="room-price">$699 / night</span>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline">Details</a>
+                <a href="contact.html" class="btn btn-gold">Book</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-preview" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Signature Services</h2>
+      <div class="services-grid" role="list">
+        <div class="service-card reveal"><i class="fa-solid fa-spa"></i>
+          <h5>Spa & Wellness</h5>
+          <p>Ocean-inspired therapies & private suites.</p>
+        </div>
+        <div class="service-card reveal"><i class="fa-solid fa-umbrella-beach"></i>
+          <h5>Private Beach</h5>
+          <p>Secluded stretches of soft sand just for guests.</p>
+        </div>
+        <div class="service-card reveal"><i class="fa-solid fa-water-ladder"></i>
+          <h5>Infinity Pool</h5>
+          <p>Panoramic pool edge blending into the horizon.</p>
+        </div>
+        <div class="service-card reveal"><i class="fa-solid fa-dumbbell"></i>
+          <h5>Fitness Studio</h5>
+          <p>Coastal-lit training space with modern equipment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title reveal">Guest Reviews</h2>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <p>“Breathtaking views and impeccable service — we'll be back.”</p>
+          <h6>- Aisha R.</h6>
+        </div>
+        <div class="review-card reveal">
+          <p>“A honeymoon to remember. Truly magical.”</p>
+          <h6>- Daniel & Mia</h6>
+        </div>
+        <div class="review-card reveal">
+          <p>“Sunrise from the villa balcony was worth every moment.”</p>
+          <h6>- Priya M.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING BAR -->
+  <div id="floatingBar" class="floating-bar">
+    <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://maps.app.goo.gl/jhz7NbfxXKmReoAbA" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+    <button id="floatTop" class="icon-pearl"><img src="../assets/shell-pearl.webp" alt="Shell icon"></button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="siteFooter">
+    <div class="footer-container container">
+      <div class="footer-left">
+        <i class="fa-solid fa-gem small-logo"></i> Majestic Pearl
+        <p class="tagline">Experience the serenity of the shore at Majestic Pearl Resort.</p>
+      </div>
+      <div class="footer-middle">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="services.html">Spa & Wellness</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Contact</h4>
+        <p>📍 Beachside Avenue, Maldives</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉ info@pearlmajestic17.com</p>
+        <div class="social-icons mt-2">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Majestic Pearl Resort | All Rights Reserved</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
