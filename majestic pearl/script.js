@@ -1,4 +1,4 @@
-// Smooth scroll for booking button
+// ----Smooth scroll for booking button-----
 document.querySelectorAll('.scroll-book').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
@@ -6,13 +6,13 @@ document.querySelectorAll('.scroll-book').forEach(btn => {
   });
 });
 
-// Floating top shell scroll
+// ---Floating top shell scroll----
 const floatTop = document.getElementById('floatTop');
 floatTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Reveal animation on scroll
+//---- Reveal animation on scroll----
 window.addEventListener('scroll', revealElements);
 function revealElements() {
   document.querySelectorAll('.reveal').forEach(el => {
@@ -24,7 +24,7 @@ function revealElements() {
   });
 }
 
-// Booking form validation
+// ---Booking form validation----
 document.getElementById('bookingForm').addEventListener('submit', e => {
   e.preventDefault();
   const checkin = document.getElementById('checkin').value;
@@ -39,7 +39,7 @@ document.getElementById('bookingForm').addEventListener('submit', e => {
   alert('Your stay inquiry has been received. We will confirm availability shortly!');
 });
 
-// Reveal animation on scroll
+// ----Reveal animation on scroll----
 const reveals = document.querySelectorAll('.service-card');
 window.addEventListener('scroll', () => {
   reveals.forEach(card => {

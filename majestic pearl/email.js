@@ -1,6 +1,6 @@
-// --- Initialize EmailJS ---
+
 (function () {
-  emailjs.init("Q6V0NFCXTnwpWcEda"); // your public key
+  emailjs.init("Q6V0NFCXTnwpWcEda");
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,15 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
-    if (!validateForm()) return; // Run validation before sending
+    if (!validateForm()) return;
 
     const btn = form.querySelector(".btn-submit");
     const originalText = btn.textContent;
     btn.textContent = "Sending...";
     btn.disabled = true;
 
-    // --- Send Email ---
     emailjs
       .send("service_zxh73xn", "template_n3ezduf", {
         fullName: form.fullName.value,
@@ -42,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
-  // ---------------- VALIDATION ----------------
+  
   function validateForm() {
     form.querySelectorAll(".error").forEach(el => el.textContent = "");
     let valid = true;
@@ -80,11 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showError(form.checkout, "Select check-out date");
       valid = false;
     }
-    if (
-      form.checkin.value &&
-      form.checkout.value &&
-      new Date(form.checkout.value) <= new Date(form.checkin.value)
-    ) {
+    if (form.checkin.value && form.checkout.value && new Date(form.checkout.value) <= new Date(form.checkin.value)) {
       showError(form.checkout, "Check-out must be after check-in date");
       valid = false;
     }
@@ -102,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return valid;
   }
 
-  // ---------------- ERROR DISPLAY ----------------
+  
   function showError(input, message) {
     let error = input.parentElement.querySelector(".error");
     if (!error) {
@@ -113,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     error.textContent = message;
   }
 
-  // ---------------- POPUP ----------------
+ 
   function showPopup(message) {
     const popupContainer = document.getElementById("popupContainer");
     const popup = document.createElement("div");
