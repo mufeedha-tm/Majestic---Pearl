@@ -155,3 +155,52 @@ textarea {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-right {
+    padding: 30px;
+  }
+
+  .sub-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .sub-hero p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 50px 15px;
+  }
+
+  .contact-right {
+    padding: 25px;
+  }
+
+  .btn-submit, .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kv .btn {
+    width: 48%;
+    padding: 8px 0;
+  }
+
+  .sub-hero h1 {
+    font-size: 2rem;
+  }
+
+  .sub-hero p {
+    font-size: 0.95rem;
+  }
+}
